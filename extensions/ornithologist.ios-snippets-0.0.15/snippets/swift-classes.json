@@ -1,0 +1,56 @@
+{
+    "Swift Class": {
+        "body": [
+            "class ${name} {",
+            "\t${code}",
+            "}"
+        ],
+        "description": "Swift Class",
+        "prefix": "class"
+    },
+    "Swift Enumerated Type Declaration": {
+        "body": [
+            "enum ${name} {",
+            "\tcase $0",
+            "}"
+        ],
+        "description": "Swift Enumerated Type Declaration",
+        "prefix": "enum"
+    },
+    "Swift Extension": {
+        "body": [
+            "extension ${name} {",
+            "\t${code}",
+            "}"
+        ],
+        "description": "Swift Extension",
+        "prefix": "extension"
+    },
+    "Swift Protocol": {
+        "body": [
+            "protocol ${name} {",
+            "\t${requirements}",
+            "}"
+        ],
+        "description": "Swift Protocol",
+        "prefix": "protocol"
+    },
+    "Swift Struct Declaration": {
+        "body": [
+            "struct ${name} {",
+            "\t${fields}",
+            "}"
+        ],
+        "description": "Swift Struct Declaration",
+        "prefix": "struct"
+    },
+    "Swift Subclass": {
+        "body": [
+            "class ${name}: ${superclass} {",
+            "\t${code}",
+            "}"
+        ],
+        "description": "Swift Subclass",
+        "prefix": "class-subclass"
+    }
+}

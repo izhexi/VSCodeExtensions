@@ -1,0 +1,61 @@
+{
+    "Expecta Expectation": {
+        "body": [
+            "expect($1).$2.$3;"
+        ],
+        "description": "Expecta Expectation",
+        "prefix": "expect"
+    },
+    "OCMock Mock Class": {
+        "body": [
+            "${class name} *${name} = OCMClassMock([${class name} class]);"
+        ],
+        "description": "OCMock Mock Class",
+        "prefix": "mock"
+    },
+    "RSpec-like afterEach": {
+        "body": [
+            "afterEach(^{",
+            "\t$0",
+            "});"
+        ],
+        "description": "Quick/Specta/Cedar After Each Block ",
+        "prefix": "afterEach"
+    },
+    "RSpec-like beforeEach": {
+        "body": [
+            "beforeEach(^{",
+            "\t$0",
+            "});"
+        ],
+        "description": "Quick/Specta/Cedar Before Each Block ",
+        "prefix": "beforeEach"
+    },
+    "RSpec-like context": {
+        "body": [
+            "context(@\"${when...}\", ^{",
+            "\t$0",
+            "});"
+        ],
+        "description": "Quick/Specta/Cedar Context Block ",
+        "prefix": "context"
+    },
+    "RSpec-like describe": {
+        "body": [
+            "describe(@\"${stuff to describe}\", ^{",
+            "\t$0",
+            "});"
+        ],
+        "description": "Quick/Specta/Cedar Describe Block ",
+        "prefix": "describe"
+    },
+    "RSpec-like it": {
+        "body": [
+            "it(@\"${enables/does/has/tells...}\", ^{",
+            "\t$0",
+            "});"
+        ],
+        "description": "Quick/Specta/Cedar It Block ",
+        "prefix": "it"
+    }
+}

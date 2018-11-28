@@ -1,0 +1,47 @@
+{
+    "RSpec-like afterEach": {
+        "body": [
+            "afterEach {",
+            "\t$0",
+            "}"
+        ],
+        "description": "Quick After Each Block",
+        "prefix": "afterEach"
+    },
+    "RSpec-like beforeEach": {
+        "body": [
+            "beforeEach {",
+            "\t$0",
+            "}"
+        ],
+        "description": "Quick Before Each Block",
+        "prefix": "beforeEach"
+    },
+    "RSpec-like context": {
+        "body": [
+            "context(\"${when...}\") {",
+            "\t$0",
+            "}"
+        ],
+        "description": "Quick Context Block",
+        "prefix": "context"
+    },
+    "RSpec-like describe": {
+        "body": [
+            "describe(\"${stuff to describe}\") {",
+            "\t$0",
+            "}"
+        ],
+        "description": "Quick Describe Block",
+        "prefix": "describe"
+    },
+    "RSpec-like it": {
+        "body": [
+            "it(\"${enables/does/has/tells...}\") {",
+            "\t$0",
+            "}"
+        ],
+        "description": "Quick It Block",
+        "prefix": "it"
+    }
+}

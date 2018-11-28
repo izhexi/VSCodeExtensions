@@ -1,0 +1,68 @@
+{
+    "Objective-C Category": {
+        "body": [
+            "@interface ${ClassName} (${CategoryName})",
+            "",
+            "${methods/properties}",
+            "",
+            "@end"
+        ],
+        "description": "Objective-C Category",
+        "prefix": "@interface-category"
+    },
+    "Objective-C Category Implementation": {
+        "body": [
+            "@implementation ${ClassName} (${CategoryName})",
+            "",
+            "${methods}",
+            "",
+            "@end"
+        ],
+        "description": "Objective-C Category Definition",
+        "prefix": "@implementation-category"
+    },
+    "Objective-C Class Declaration": {
+        "body": [
+            "@interface ${ClassName} : ${Superclass}",
+            "",
+            "${methods/properties}",
+            "",
+            "@end"
+        ],
+        "description": "Objective-C Class Declaration",
+        "prefix": "@interface"
+    },
+    "Objective-C Class Extension": {
+        "body": [
+            "@interface ${ClassName} ()",
+            "",
+            "${methods/properties}",
+            "",
+            "@end"
+        ],
+        "description": "Objective-C Class Extension",
+        "prefix": "@interface-extension"
+    },
+    "Objective-C Class Implementation": {
+        "body": [
+            "@implementation ${ClassName}",
+            "",
+            "${methods}",
+            "",
+            "@end"
+        ],
+        "description": "Objective-C Class Implementation",
+        "prefix": "@implementation"
+    },
+    "Objective-C Protocol Definition": {
+        "body": [
+            "@protocol ${ProtocolName} <NSObject>",
+            "",
+            "${methods}",
+            "",
+            "@end"
+        ],
+        "description": "Objective-C Protocol Definition",
+        "prefix": "@protocol"
+    }
+}

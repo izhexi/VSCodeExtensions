@@ -1,0 +1,67 @@
+{
+	"name": "ios-snippets",
+	"displayName": "iOS Snippets",
+	"description": "Snippets for iOS/macOS Development",
+	"version": "0.0.15",
+	"publisher": "ornithologist",
+	"icon": "icon.png",
+	"homepage": "https://github.com/ornithocoder/vscode-ios-snippets",
+	"engines": {
+		"vscode": "^0.10.6"
+	},
+	"keywords": [
+		"ios",
+		"objective-c",
+		"swift",
+		"completion",
+		"snippets"
+	],
+	"categories": [
+		"Snippets"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ornithocoder/vscode-ios-snippets.git"
+	},
+	"contributes": {
+		"snippets": [
+			{
+				"language": "objective-c",
+				"path": "./snippets/objc-misc.json"
+			},
+			{
+				"language": "objective-c",
+				"path": "./snippets/objc-testing.json"
+			},
+			{
+				"language": "objective-c",
+				"path": "./snippets/objc-fblocks.json"
+			},
+			{
+				"language": "objective-c",
+				"path": "./snippets/objc-classes.json"
+			},
+			{
+				"language": "swift",
+				"path": "./snippets/swift-testing.json"
+			},
+			{
+				"language": "swift",
+				"path": "./snippets/swift-classes.json"
+			},
+			{
+				"language": "swift",
+				"path": "./snippets/swift-misc.json"
+			},
+			{
+				"language": "ruby",
+				"path": "./snippets/ruby-cocoapods.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "c6e97eb4-f559-49ee-9203-fd874f08f307",
+		"publisherId": "02d66bfe-364e-4ae8-ac7a-1172d8088f7f",
+		"publisherDisplayName": "ornithologist"
+	}
+}

@@ -1,0 +1,44 @@
+{
+    "Block as a local variable": {
+        "body": [
+            "${returnType} (^${blockName})(${parameterTypes}) = ^${returnType}(${parameters}) {",
+            "\t$0",
+            "};"
+        ],
+        "description": "Block as a local variable",
+        "prefix": "block-as-local-variable"
+    },
+    "Block as a method parameter": {
+        "body": [
+            "(${returnType} (^)(${parameterTypes}))${blockName};"
+        ],
+        "description": "Block as a method parameter",
+        "prefix": "block-as-method-parameter"
+    },
+    "Block as a property": {
+        "body": [
+            "@property (copy, nonatomic, ${nullability}) ${returnType} (^${blockName})(${parameterTypes});"
+        ],
+        "description": "Block as a property",
+        "prefix": "block-as-property"
+    },
+    "Block as a typedef": {
+        "body": [
+            "typedef ${returnType} (^${TypeName})(${parameterTypes});",
+            "${TypeName} ${blockName} = ^${returnType}(${parameters}) {",
+            "\t$0",
+            "};"
+        ],
+        "description": "Block as a typedef",
+        "prefix": "block-as-typedef"
+    },
+    "Block as an argument to a method call": {
+        "body": [
+            "^${returnType} (${parameters}) {",
+            "\t$0",
+            "};"
+        ],
+        "description": "Block as an argument to a method call",
+        "prefix": "block-as-argument-to-method-call"
+    }
+}

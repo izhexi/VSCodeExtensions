@@ -1,0 +1,48 @@
+{
+    "Pod": {
+        "body": [
+            "pod '${name}', '~> ${version}'"
+        ],
+        "description": "CocoaPods Pod Declaration",
+        "prefix": "pod"
+    },
+    "Pod from Git Commit": {
+        "body": [
+            "pod '${name}', :git => '${repository}', :commit => '${sha}'"
+        ],
+        "description": "CocoaPods Pod from Git Commit Declaration",
+        "prefix": "pod-git-commit"
+    },
+    "Pod from Git Tag": {
+        "body": [
+            "pod '${name}', :git => '${repository}', :tag => '${tag}'"
+        ],
+        "description": "CocoaPods Pod from Git Tag Declaration",
+        "prefix": "pod-git-tag"
+    },
+    "Pod from Local Disk": {
+        "body": [
+            "pod '${name}', :path => '${path}'"
+        ],
+        "description": "CocoaPods Pod from Local Disk Declaration",
+        "prefix": "pod-local-disk"
+    },
+    "Post Install": {
+        "body": [
+            "post_install do |installer|",
+            "\t$0",
+            "end"
+        ],
+        "description": "CocoaPods Post Install",
+        "prefix": "post_install"
+    },
+    "Target": {
+        "body": [
+            "target '${name}' do",
+            "\t$0",
+            "end"
+        ],
+        "description": "CocoaPods Target Declaration",
+        "prefix": "target"
+    }
+}

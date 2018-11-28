@@ -1,0 +1,45 @@
+{
+	"name": "dart-import",
+	"displayName": "dart-import",
+	"description": "Fix Dart/Flutter's imports",
+	"version": "0.1.0",
+	"publisher": "luanpotter",
+	"repository": "https://github.com/luanpotter/vscode-dart-import",
+	"engines": {
+		"vscode": "^1.24.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:dart-import.fix"
+	],
+	"main": "./out/extension",
+	"contributes": {
+		"commands": [
+			{
+				"command": "dart-import.fix",
+				"title": "Fix Imports"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "npm run compile && node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"typescript": "^2.6.1",
+		"vscode": "^1.1.6",
+		"tslint": "^5.8.0",
+		"@types/node": "^7.0.43",
+		"@types/mocha": "^2.2.42"
+	},
+	"__metadata": {
+		"id": "81fc200f-fa28-4491-8d20-cda841da5566",
+		"publisherId": "24006cab-e015-4a48-a1c6-d6cb8378350c",
+		"publisherDisplayName": "Luan"
+	}
+}

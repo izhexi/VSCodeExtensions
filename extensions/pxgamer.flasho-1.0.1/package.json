@@ -1,0 +1,83 @@
+{
+	"name": "flasho",
+	"displayName": "Flash Open",
+	"description": "Open .fla files in Adobe Flash.",
+	"version": "1.0.1",
+	"license": "MIT",
+	"keywords": [
+		"adobe",
+		"flash",
+		"cs4"
+	],
+	"publisher": "pxgamer",
+	"engines": {
+		"vscode": "^1.15.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:flasho.Flash"
+	],
+	"main": "./extension",
+	"contributes": {
+		"commands": [
+			{
+				"command": "flasho.Flash",
+				"title": "Open in Adobe Flash"
+			}
+		],
+		"menus": {
+			"explorer/context": [
+				{
+					"command": "flasho.Flash",
+					"group": "navigation"
+				}
+			]
+		},
+		"configuration": {
+			"title": "Adobe Flash Open",
+			"properties": {
+				"flasho.notify": {
+					"type": "boolean",
+					"default": false,
+					"description": "Show notifications on actions."
+				},
+				"flasho.os_bit": {
+					"type": "string",
+					"enum": [
+						"64-bit",
+						"32-bit"
+					],
+					"default": "64-bit",
+					"description": "The architecture of the operating system."
+				},
+				"flasho.version": {
+					"type": "string",
+					"enum": [
+						"CS6",
+						"CS5",
+						"CS4",
+						"CS3",
+						"CS2"
+					],
+					"default": "CS6",
+					"description": "Choose what version of Flash you're using."
+				}
+			}
+		}
+	},
+	"devDependencies": {
+		"vscode": "^1.1",
+		"eslint": "^4.12"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/PXgamer/flash-open-vscode"
+	},
+	"__metadata": {
+		"id": "b325136c-d18d-4ea0-86a1-115c94bfe2ff",
+		"publisherId": "782b4712-dce2-45ef-b71e-70c1702f38ce",
+		"publisherDisplayName": "pxgamer"
+	}
+}

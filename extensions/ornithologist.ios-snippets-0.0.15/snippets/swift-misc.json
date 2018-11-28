@@ -1,0 +1,234 @@
+{
+    "Fix Me": {
+        "body": [
+            "// FIXME: ${description}"
+        ],
+        "description": "Fix Me (// FIXME: ...)",
+        "prefix": "fixme"
+    },
+    "Mark": {
+        "body": [
+            "// MARK: - ${description}"
+        ],
+        "description": "Mark (// MARK: - ...)",
+        "prefix": "mark"
+    },
+    "Swift API Availability Check Statement": {
+        "body": [
+            "if #available(${platform name} ${version}, *) {",
+            "\t${API available statements}",
+            "} else {",
+            "\t${fallback statements}",
+            "}"
+        ],
+        "description": "Swift API Availability Check Statement",
+        "prefix": "available"
+    },
+    "Swift Closure Expression": {
+        "body": [
+            "{ (${parameters}) -> ${return type} in",
+            "\t${statements}",
+            "}"
+        ],
+        "description": "Swift Closure Expression",
+        "prefix": "closure"
+    },
+    "Swift Computed Constant Declaration": {
+        "body": [
+            "let ${property name}: ${type name} = {",
+            "\t${statements}",
+            "\treturn ${value}",
+            "}()"
+        ],
+        "description": "Swift Computed Constant Declaration",
+        "prefix": "let-computed-constant"
+    },
+    "Swift Computed Variable Get Declaration": {
+        "body": [
+            "var ${variable name}: ${type} {",
+            "\t${statements}",
+            "}"
+        ],
+        "description": "Swift Computed Variable Get Declaration",
+        "prefix": "var-computed-variable-get"
+    },
+    "Swift Computed Variable Get and Set Declaration": {
+        "body": [
+            "var ${variable name}: ${type} {",
+            "get {",
+            "\t${statements}",
+            "}",
+            "set {",
+            "\t${variable name} = newValue",
+            "}",
+            "}"
+        ],
+        "description": "Swift Computed Variable Get and Set Declaration",
+        "prefix": "var-computed-variable-get-set"
+    },
+    "Swift Defer Statement": {
+        "body": [
+            "defer {",
+            "\t${deferred statements}",
+            "}"
+        ],
+        "description": "Swift Defer Statement",
+        "prefix": "defer"
+    },
+    "Swift Do-Catch Statement": {
+        "body": [
+            "do {",
+            "\ttry ${throwing expression}",
+            "} catch ${pattern} {",
+            "\t${statements}",
+            "}"
+        ],
+        "description": "Swift Do-Catch Statement",
+        "prefix": "docatch"
+    },
+    "Swift For Statement": {
+        "body": [
+            "for ${item} in ${items} {",
+            "\t${code}",
+            "}"
+        ],
+        "description": "Swift For Statement",
+        "prefix": "for"
+    },
+    "Swift Function Statement": {
+        "body": [
+            "func ${name}(${parameters}) -> ${return type} {",
+            "\t${function body}",
+            "}"
+        ],
+        "description": "Swift Function Statement",
+        "prefix": "func"
+    },
+    "Swift Guard Statement": {
+        "body": [
+            "guard ${condition} else {",
+            "\t${statements}",
+            "}"
+        ],
+        "description": "Swift Guard Statement",
+        "prefix": "guard"
+    },
+    "Swift Guard-Let Statement": {
+        "body": [
+            "guard let ${constant} = ${expression} else { return ${return value} }"
+        ],
+        "description": "Swift Guard-Let Statement",
+        "prefix": "guardlet"
+    },
+    "Swift If Statement": {
+        "body": [
+            "if ${condition} {",
+            "\t${code}",
+            "}"
+        ],
+        "description": "Swift If Statement",
+        "prefix": "if"
+    },
+    "Swift If-Else Statement": {
+        "body": [
+            "if ${condition} {",
+            "\t${statementA}",
+            "} else {",
+            "\t${statementB}",
+            "}"
+        ],
+        "description": "Swift If-Else Statement",
+        "prefix": "ifelse"
+    },
+    "Swift If-Let Statement": {
+        "body": [
+            "if let ${constant name} = ${optional} {",
+            "\t${statements}",
+            "}"
+        ],
+        "description": "Swift If-Let Statement",
+        "prefix": "iflet"
+    },
+    "Swift Initializer Declaration": {
+        "body": [
+            "init (${parameters}) {",
+            "\t${statements}",
+            "}"
+        ],
+        "description": "Swift Initializer Declaration",
+        "prefix": "init"
+    },
+    "Swift Lazy Computed Property Declaration": {
+        "body": [
+            "lazy var ${property name}: ${type name} = {",
+            "\t${statements}",
+            "\treturn ${value}",
+            "}()"
+        ],
+        "description": "Swift Lazy Computed Property Declaration",
+        "prefix": "var-lazy-computed-property"
+    },
+    "Swift Lazy Stored Variable Declaration": {
+        "body": [
+            "lazy var ${variable name} = ${expression}"
+        ],
+        "description": "Swift Lazy Stored Variable Declaration",
+        "prefix": "var-lazy-variable"
+    },
+    "Swift Let Declaration": {
+        "body": [
+            "let ${name} = ${value}"
+        ],
+        "description": "Swift Let Declaration",
+        "prefix": "let"
+    },
+    "Swift Singleton": {
+        "body": [
+            "static let sharedInstance : ${name} = ${name}()"
+        ],
+        "description": "Swift Singleton (static let sharedInstance...)",
+        "prefix": "singleton"
+    },
+    "Swift Switch Statement": {
+        "body": [
+            "switch ${value} {",
+            "case ${pattern}:",
+            "\t${codeA}",
+            "default:",
+            "\t${codeB}",
+            "}"
+        ],
+        "description": "Swift Switch Statement",
+        "prefix": "switch"
+    },
+    "Swift Typealias Declaration": {
+        "body": [
+            "typealias ${type name} = ${type expression}"
+        ],
+        "description": "Swift Typealias Declaration",
+        "prefix": "typealias"
+    },
+    "Swift Var Declaration": {
+        "body": [
+            "var ${name} = ${value}"
+        ],
+        "description": "Swift Var Declaration",
+        "prefix": "var"
+    },
+    "Swift While Statement": {
+        "body": [
+            "while ${condition} {",
+            "\t${code}",
+            "}"
+        ],
+        "description": "Swift While Statement",
+        "prefix": "while"
+    },
+    "To Do": {
+        "body": [
+            "// TODO: ${description}"
+        ],
+        "description": "To Do (// TODO: ...)",
+        "prefix": "todo"
+    }
+}

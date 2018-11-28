@@ -1,0 +1,245 @@
+{
+	"name": "vscode-format",
+	"displayName": "Visual Studio Code Format",
+	"description": "Format files",
+	"icon": "images/icon.png",
+	"version": "0.0.6",
+	"publisher": "ryannaddy",
+	"engines": {
+		"vscode": "^0.10.1"
+	},
+	"activationEvents": [
+		"*"
+	],
+	"categories": [
+		"Languages",
+		"Formatters",
+		"Other"
+	],
+	"keywords": [
+		"languages",
+		"format"
+	],
+	"bugs": {
+		"url": "https://github.com/TheColorRed/vscode-format/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/TheColorRed/vscode-format"
+	},
+	"main": "./out/src/extension",
+	"contributes": {
+		"configuration": {
+			"title": "Visual Studio Code Format",
+			"properties": {
+				"format.workspaceDisabled": {
+					"type": "boolean",
+					"default": false,
+					"description": "Wether or not to disable formatting on the entire workspace."
+				},
+				"format.disabled": {
+					"type": "array",
+					"default": [
+						"html",
+						"markdown",
+						"plaintext",
+						"diff",
+						"jade",
+						"xml",
+						"blade",
+						"handlebars",
+						"tpl"
+					],
+					"description": "A list of of languages that the formatter is disabled on."
+				},
+				"format.newLine": {
+					"type": "object",
+					"default": {
+						"brace": false
+					},
+					"description": "Whether or not to put items on a new line or the same line."
+				},
+				"format.onType": {
+					"type": "boolean",
+					"default": true,
+					"description": "Enables or disables formatting while typing."
+				},
+				"format.space": {
+					"type": "object",
+					"description": "The number of spaces to place before/after particular character.",
+					"default": {
+						"language": {
+							"php": {
+								".": {
+									"before": 1,
+									"after": 1
+								}
+							},
+							"javascript": {
+								"+": {
+									"before": 1,
+									"after": 1
+								}
+							},
+							"java": {
+								"+": {
+									"before": 1,
+									"after": 1
+								}
+							},
+							"css": {
+								":": {
+									"before": 0,
+									"after": 1
+								},
+								"=": {
+									"before": 0,
+									"after": 0
+								}
+							}
+						},
+						"and": {
+							"before": 1,
+							"after": 1
+						},
+						"or": {
+							"before": 1,
+							"after": 1
+						},
+						"equal": {
+							"before": 1,
+							"after": 1
+						},
+						"not": {
+							"before": 1,
+							"after": 1
+						},
+						"greaterThan": {
+							"before": 1,
+							"after": 1
+						},
+						"lessThan": {
+							"before": 1,
+							"after": 1
+						},
+						"comma": {
+							"before": 0,
+							"after": 1
+						},
+						"question": {
+							"before": 1,
+							"after": 1
+						},
+						"colon": {
+							"before": 1,
+							"after": 1
+						},
+						"semicolon": {
+							"before": 0,
+							"after": 1
+						},
+						"increment": {
+							"before": 0,
+							"after": 0
+						},
+						"decrement": {
+							"before": 0,
+							"after": 0
+						},
+						"add": {
+							"before": 1,
+							"after": 1
+						},
+						"subtract": {
+							"before": 1,
+							"after": 1
+						},
+						"multiply": {
+							"before": 1,
+							"after": 1
+						},
+						"divide": {
+							"before": 1,
+							"after": 1
+						},
+						"modulo": {
+							"before": 1,
+							"after": 1
+						},
+						"parenthesis": {
+							"open": {
+								"before": {
+									"other": 1,
+									"foreach": 1,
+									"for": 1,
+									"while": 1,
+									"if": 1,
+									"elseif": 1,
+									"elif": 1,
+									"switch": 1,
+									"do": 1,
+									"function": 1
+								},
+								"after": {
+									"other": 1,
+									"foreach": 0,
+									"for": 0,
+									"while": 0,
+									"if": 0,
+									"elseif": 0,
+									"elif": 0,
+									"switch": 0,
+									"do": 0,
+									"function": 0
+								}
+							},
+							"close": {
+								"before": {
+									"other": 1,
+									"foreach": 0,
+									"for": 0,
+									"while": 0,
+									"if": 0,
+									"elseif": 0,
+									"elif": 0,
+									"switch": 0,
+									"do": 0,
+									"function": 0
+								}
+							}
+						},
+						"brace": {
+							"open": {
+								"before": {
+									"other": 1,
+									"foreach": 1,
+									"for": 1,
+									"while": 1,
+									"if": 1,
+									"elseif": 1,
+									"elif": 1,
+									"switch": 1,
+									"do": 1,
+									"function": 1
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "node ./node_modules/vscode/bin/compile",
+		"compile": "node ./node_modules/vscode/bin/compile -watch -p ./"
+	},
+	"devDependencies": {
+		"typescript": "^1.6.2",
+		"vscode": "0.10.x"
+	},
+	"__metadata": {
+		"id": "1df74841-b5d4-4e61-b722-c92ea21b0427",
+		"publisherId": "24a82927-7960-4ab9-84bc-064de264d88b",
+		"publisherDisplayName": "Ryan Naddy"
+	}
+}
